@@ -1,0 +1,63 @@
+.App {
+    text-align: center;
+  }
+  
+  * {
+    font-family: sans-serif;
+  }
+
+  .container{
+    display: flex;
+   flex-direction: column;
+   max-width: 30%;
+   padding: 15px;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+
+  input,
+  button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  input {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  button {
+    border: 1px solid gray;
+    background: rgb(175, 200, 255);
+    margin-right: 5px;
+  }
+  button:nth-last-child(2)
+   {
+    background: tomato;
+    color: white;
+  }
+  
+  button:nth-last-child(1){
+    background: rgb(90, 182, 93);
+    color: white;
+  }
+  
+  .res{
+    background-color:rgb(90, 182, 93) ;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .calc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+  }

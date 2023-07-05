@@ -5,6 +5,7 @@ import { useState } from "react";
 import TabInfoOne from "./Tabs/TabInfoOne";
 import TabInfoThree from "./Tabs/TabInfoThree";
 import TabInfoTwo from "./Tabs/TabInfoTwo";
+import Calc from "./Calculator/Calc";
 
 function App() {
   const [activeTab, setActiveTab] = useState(0);
@@ -14,6 +15,8 @@ function App() {
   return (
     <div>
       <Accordion />
+
+      <Calc/>
 
       <Tabs setActiveTab={setActiveTab} />
       {activeTab === 0 && <TabInfoOne />}
