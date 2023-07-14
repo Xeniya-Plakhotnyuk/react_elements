@@ -6,6 +6,8 @@ import TabInfoOne from "./Tabs/TabInfoOne";
 import TabInfoThree from "./Tabs/TabInfoThree";
 import TabInfoTwo from "./Tabs/TabInfoTwo";
 import Calc from "./Calculator/Calc";
+import Content from "./Modal/Content";
+import Modal from "./Modal/Modal";
 
 function App() {
   const [activeTab, setActiveTab] = useState(0);
@@ -23,12 +25,14 @@ function App() {
       {activeTab === 1 && <TabInfoTwo />}
       {activeTab === 2 && <TabInfoThree />}
 
+    <button onClick={()=> setIsOpen(true)}>Open Modal</button>
 
-
-
-
-
-    </div>
+      {isOpen &&
+      <Modal setIsOpen={setIsOpen}>
+      <Content setIsOpen={setIsOpen} />
+      </Modal>
+      }
+       </div>
   );
 }
 
