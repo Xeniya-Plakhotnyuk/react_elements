@@ -1,4 +1,5 @@
 import Loader from "./Loader"
+import './loader.css'
 
 const LoaderPage =() =>{
     return(

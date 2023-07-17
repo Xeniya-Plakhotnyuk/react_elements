@@ -12,6 +12,14 @@ import LoaderPage from "./Loader/LoaderPage";
 
 function App() {
 
+   // LOADER
+
+  const[stateLoader, setStateLoader] = useState(true);
+  useEffect (() => {
+    const timer = setTimeout(() => setStateLoader(false), 3000);
+    return () => clearTimeout(timer);
+  }, [])
+
   // TABS
   const [activeTab, setActiveTab] = useState(0);
 
@@ -19,13 +27,7 @@ function App() {
   // MODAL
   const [isOpen, setIsOpen] = useState(false);
 
-  // LOADER
-
-  const[stateLoader, setStateLoader] = useState(true);
-  useEffect (() => {
-    const timer = setTimeout(() => setStateLoader(false, 3000));
-    return () => clearTimeout(timer);
-  }, [])
+ 
 
   // https://mhnpd.github.io/react-loader-spinner/docs/components/ball-traingle
 
