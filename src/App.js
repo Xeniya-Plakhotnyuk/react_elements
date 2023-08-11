@@ -9,6 +9,8 @@ import Calc from "./Calculator/Calc";
 import Content from "./Modal/Content";
 import Modal from "./Modal/Modal";
 import LoaderPage from "./Loader/LoaderPage";
+import Addsong from "./Addsong/Addsong";
+
 
 function App() {
 
@@ -56,6 +58,8 @@ function App() {
       {/* LOADER */}
 
       { stateLoader && <LoaderPage />}
+
+      <Addsong />
 
        </div>
   );
