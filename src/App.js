@@ -10,6 +10,7 @@ import Content from "./Modal/Content";
 import Modal from "./Modal/Modal";
 import LoaderPage from "./Loader/LoaderPage";
 import Addsong from "./Addsong/Addsong";
+import Count from "./UseReducer/useReducer";
 
 
 function App() {
@@ -60,6 +61,8 @@ function App() {
       { stateLoader && <LoaderPage />}
 
       <Addsong />
+
+      <Count />
 
        </div>
   );
