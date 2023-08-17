@@ -10,6 +10,7 @@ function reducer(state, action) {
       return { clock: 0, isTicking: false };
     case "TICK":
       return { ...state, clock: state.clock + 1 };
+      default: return state;
   }
 }
 

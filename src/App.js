@@ -11,6 +11,7 @@ import Modal from "./Modal/Modal";
 import LoaderPage from "./Loader/LoaderPage";
 import Addsong from "./Addsong/Addsong";
 import Count from "./UseReducer/useReducer";
+import Timer from "./ReducerTimer/Timer";
 
 
 function App() {
@@ -63,6 +64,8 @@ function App() {
       <Addsong />
 
       <Count />
+
+      <Timer />
 
        </div>
   );
