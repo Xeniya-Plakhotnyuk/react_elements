@@ -12,6 +12,7 @@ import LoaderPage from "./Loader/LoaderPage";
 import Addsong from "./Addsong/Addsong";
 import Count from "./UseReducer/useReducer";
 import Timer from "./ReducerTimer/Timer";
+import App3 from "./UseContext/App3";
 
 
 function App() {
@@ -66,6 +67,8 @@ function App() {
       <Count />
 
       <Timer />
+
+      <App3 />
 
        </div>
   );
